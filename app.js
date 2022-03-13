@@ -124,15 +124,27 @@ const image = ["./image/i1.jpg", "./image/i3.jpg", "./image/i4.jpg", "./image/i5
 "./image/i7.jpg", "./image/i8.jpg", "./image/i9.jpg", "./image/i10.jpg", "./image/i11.jpg", "./image/i12.jpg", "./image/i13.jpg",
 "./image/i14.jpg", "./image/i15.jpg", "./image/i16.jpg", "./image/i17.jpg", "./image/i18.jpg" ];
 
-var i=0;
+// var i=0;
 
-function changeBackground(){
-    document.body.style.backgroundImage = "url("+image[i]+")";
-    i++;
-    if(i==16){
-        i=0;
+// function changeBackground() {
+//     document.body.style.backgroundImage = "url("+image[i]+")";
+//     i++;
+//     if(i==16){
+//         i=0;
+//     }
+// }
+// setInterval(changeBackground, 10000);
+
+    var interval=0;
+    Timer();
+
+    function Timer() {
+        // clearInterval(interval);
+        interval = setInterval(changeImage, 5000);
     }
-}
-
-
-setInterval(changeBackground, 10000);
+  
+    function changeImage() {   
+        var i = Math.floor((Math.random() * 17));
+        document.body.style.backgroundImage="url("+image[i]+")";
+        
+    }
