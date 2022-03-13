@@ -9,10 +9,46 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url(./image/i15.jpg); 
+    background-image: url(./image/i1.jpg); 
     background-size: 100% 100%;
     background-repeat: repeat;
-    transition: 2s ease;
+    /* transition: 2s ease; */
+    animation: change 20s infinite ease-in-out;
+}
+@keyframes change{
+    0%{
+        background-image: url(./image/i1.jpg);
+    }
+    10%{
+        background-image: url(./image/i7.jpg);
+    }
+    20%{
+        background-image: url(./image/i3.jpg);
+    }
+    30%{
+        background-image: url(./image/i4.jpg);
+    }
+    40%{
+        background-image: url(./image/i5.jpg);
+    }
+    50%{
+        background-image: url(./image/i6.jpg);
+    }
+    60%{
+        background-image: url(./image/i8.jpg);
+    }
+    70%{
+        background-image: url(./image/i9.jpg);
+    }
+    80%{
+        background-image: url(./image/i10.jpg);
+    }
+    90%{
+        background-image: url(./image/i11.jpg);
+    }
+    100%{
+        background-image: url(./image/i12.jpg);
+    }
 }
 .wrapper{
     width: 400px;

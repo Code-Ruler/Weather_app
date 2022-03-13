@@ -135,16 +135,16 @@ const image = ["./image/i1.jpg", "./image/i3.jpg", "./image/i4.jpg", "./image/i5
 // }
 // setInterval(changeBackground, 10000);
 
-    var interval=0;
-    Timer();
+    // var interval=0;
+    // Timer();
 
-    function Timer() {
-        // clearInterval(interval);
-        interval = setInterval(changeImage, 5000);
-    }
+    // function Timer() {
+    //     // clearInterval(interval);
+    //     interval = setInterval(changeImage, 5000);
+    // }
   
-    function changeImage() {   
-        var i = Math.floor((Math.random() * 17));
-        document.body.style.backgroundImage="url("+image[i]+")";
+    // function changeImage() {   
+    //     var i = Math.floor((Math.random() * 17));
+    //     document.body.style.backgroundImage="url("+image[i]+")";
         
-    }
+    // }
